@@ -1,1 +1,211 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map, Food, Smiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a9184 0%, #217a8b 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        h2 {
+            color: #0e8c73;
+            margin-top: 30px;
+        }
+        
+        .map-grid, .food-grid, .smiles-grid {
+            background-color: #f0f0f0;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            position: relative;
+        }
+        
+        .grid-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .grid-number {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 1.5em;
+            color: #999;
+        }
+        
+        .grid-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        
+        .grid-item {
+            position: relative;
+        }
+        
+        .grid-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        .grid-caption {
+            font-size: 0.85em;
+            margin-top: 5px;
+            color: #666;
+        }
+        
+        .triangle {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 40px 40px;
+            border-color: transparent transparent #ff0000 transparent;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Map, Food, Smiles</h1>
+        <p>Mabel's webpage</p>
+    </div>
+    
+    <div class="container">
+        <h2>Map, Food, Smiles</h2>
+        <p>Created by Mabel on 20250302</p>
+        
+        <h2>Map</h2>
+        <p>I was born in Taoyuan City, a charming countryside area in northern Taiwan. For high school, I moved to Taipei, and during my undergraduate years, I had the wonderful opportunity to be an exchange student in Austria. I earned my Ph.D. in Statistics from Penn State, USA. I feel incredibly fortunate to have started my academic career at National Central University. Now, I am a Professor at National Yang Ming Chiao Tung University.</p>
+        
+        <div class="map-grid">
+            <div class="grid-title">Maps</div>
+            <div class="grid-number">2</div>
+            <div class="grid-images">
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/300x200" alt="1979 Taoyuan, TW">
+                    <div class="grid-caption">1979: Taoyuan, TW</div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/300x200" alt="2010-2017 NCU">
+                    <div class="grid-caption">2010-2017: NCU</div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Taiwan Map">
+                    <div class="grid-caption">1997-2001 math, 2002-2004 finance: NTU</div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/300x200" alt="2001 Fall: Linz, Austria">
+                    <div class="grid-caption">2001 Fall: Linz, Austria</div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/300x200" alt="2017-present: NYCU">
+                    <div class="grid-caption">2017-present: NYCU</div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Tile">
+                    <div class="grid-caption">Tile</div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/300x200" alt="2005-2010 Beaver Stadium, PSU, PA, USA">
+                    <div class="grid-caption">2005-2010 Beaver Stadium, PSU, PA, USA</div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Stadium">
+                    <div class="grid-caption"></div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Running">
+                    <div class="grid-caption"></div>
+                </div>
+            </div>
+            <div class="triangle"></div>
+        </div>
+        
+        <h2>Food</h2>
+        <p>I've always loved desserts, but over time, I've also become a mindful part-time nutritionist.</p>
+        
+        <div class="food-grid">
+            <div class="grid-title">Food</div>
+            <div class="grid-number">3</div>
+            <div class="grid-images" style="grid-template-columns: 1fr 2fr;">
+                <div style="display: flex; flex-direction: column;">
+                    <div class="grid-item" style="margin-bottom: 15px;">
+                        <img src="https://via.placeholder.com/300x200" alt="Dark chocolate, 70% cocoa">
+                        <div class="grid-caption">Dark chocolate, 70% cocoa</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://via.placeholder.com/300x200" alt="Whoopie Pie">
+                        <div class="grid-caption">Whoopie Pie</div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/600x400" alt="Cooking dinner for kids">
+                    <div class="grid-caption">Cooking dinner for kids</div>
+                </div>
+            </div>
+            <div class="triangle"></div>
+        </div>
+        
+        <h2>Smiles</h2>
+        <p>I love spending time outdoors with my family, enjoy watching online videos about history and civilization, and have a strong passion for investing and trading.</p>
+        
+        <div class="smiles-grid">
+            <div class="grid-title">Smiles</div>
+            <div class="grid-number">4</div>
+            <div class="grid-images">
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/300x300" alt="Sun Moon Lake">
+                    <div class="grid-caption">Sun Moon Lake</div>
+                </div>
+                <div class="grid-item" style="grid-column: span 2;">
+                    <img src="https://via.placeholder.com/600x300" alt="Human evolution">
+                    <div class="grid-caption">Human evolution</div>
+                </div>
+                <div class="grid-item" style="grid-column: span 3;">
+                    <img src="https://via.placeholder.com/900x200" alt="Investment">
+                    <div class="grid-caption">Investment</div>
+                </div>
+            </div>
+            <div class="triangle"></div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>This page was generated by GitHub Pages.</p>
+    </div>
+</body>
+</html>
